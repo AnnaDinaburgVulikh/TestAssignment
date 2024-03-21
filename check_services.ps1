@@ -14,7 +14,7 @@ function Check-ServiceStatus {
         # Check if the service is running
         if ($serviceStatus.Status -ne "Running") {
             # Send an alert for critical services
-            if ($ServiceName -eq "wuauserv") {
+            if ($ServiceName -eq "Dhcp") {
                 Write-Host "Alert: Critical service '$($serviceStatus.DisplayName)' is stopped." -ForegroundColor Red
             } else {
                 Write-Host "Service '$($serviceStatus.DisplayName)' is stopped."

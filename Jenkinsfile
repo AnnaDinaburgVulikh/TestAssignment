@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Check out your code from the source control
-                sh "git clone 'https://github.com/AnnaDinaburgVulikh/TestAssignment.git'"
+                bat "git clone 'http://github.com/AnnaDinaburgVulikh/TestAssignment.git'"
             }
         }
 
